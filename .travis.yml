@@ -1,0 +1,22 @@
+language: cpp
+
+sudo: false
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+      - libboost-all-dev
+
+before_script:
+  - git clone https://github.com/czipperz/vick vick
+  - cd vick
+  - mkdir -p plugins
+  - cd plugins
+  - git clone https://github.com/czipperz/vick-looking-at
+  - cd ..
+
+script:
+  - ./testing.sh
