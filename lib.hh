@@ -9,6 +9,9 @@
 
 #include "contents.hh"
 
+namespace vick {
+namespace looking_at {
+
 /*!
  * \file vick-looking-at/lib.hh
  * \brief Defines functions to test if we are looking at something.
@@ -17,8 +20,6 @@
  * interactive usage.
  */
 
-namespace vick {
-namespace looking_at {
 /*!
  * \brief Returns whether the query matches the contents at the
  * current position.
